@@ -14,3 +14,11 @@ This is an App for people who love Houseplants and who want to share images of t
     - As a Returning Visitor, I want to be able to update my profile 
     - As a Frequent User I want to be able to upload my best houseplant images and information and display them on my profile.
     - As a Frequent User, I want to be able to update my records and delete images I don’t want on my profile.
+
+## Design
+- Colour scheme
+    - The main colours used in the app are Green, Grey and black
+- Typography
+    - Inter is the font family used across the app with sans-serif as a fall-back font. Inter is a variable font with 9 weights specifically designed for computer screens by Rasmus Andersson. Inter is a free and open source font available via Google Fonts.
+- Wireframes
+    
