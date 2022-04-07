@@ -14,13 +14,13 @@
                         <div class="form-group">
                             <i class="fas fa-user-plus prefix text-darken-4"></i>
                             <label for="username"></label>
-                            <input id="username" name="username"  type="text" class="form-control" placeholder="Username"> 
+                            <input id="username" name="username"  type="text" min-length="5" max-length="15" pattern="^[a-zA-Z0-9]{5,15}$" class="form-control" placeholder="Username" required> 
                         </div>
                         <!--password-->
                         <div class="form-group">
                             <i class="fas fa-user-lock prefix text-darken-4"></i>
                             <label for="password"></label>
-                            <input id="password" name="password" class="form-control" type="password" class="form-control" placeholder="Password">
+                            <input id="password" name="password" class="form-control" type="password" min-length="5" max-length="15" pattern="^[a-zA-Z0-9]{5,15}$" class="form-control" placeholder="Password" required>
                         </div>
                         <!--register-->
                         <div>
