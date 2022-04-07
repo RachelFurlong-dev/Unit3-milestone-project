@@ -4,6 +4,7 @@ from flask import (
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+
 if os.path.exists("env.py"):
     import env
 
@@ -22,6 +23,11 @@ mongo = PyMongo(app)
 def get_houseplant():
     houseplant = mongo.db.houseplant.find()
     return render_template("houseplant.html", houseplant=houseplant)
+
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
 
 
 if __name__ == "__main__":
