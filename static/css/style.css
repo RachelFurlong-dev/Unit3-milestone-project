@@ -1,4 +1,31 @@
+.flashes-container{
+    background-color: #0d601d;
+}
 .flashes h4{
+    font-size:2rem;
+    font-weight:600;
     line-height: 5rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
+}
+.login-heading{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight:900;
+    color:#0d601d;
+    margin-bottom:50px;
+    letter-spacing: 2px;
+}
+a{
+    color:#0d601d;
+}
+
+button[type="submit"]{
+    margin-top:25px;
+    margin-bottom: 10px;
+    background-color: #0d601d;
+    border: none;
+    font-size:1.5rem;
+    font-weight:600;
+    letter-spacing: 0.1rem;
+    padding:10px;
 }

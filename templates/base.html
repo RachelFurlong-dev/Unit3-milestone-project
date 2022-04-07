@@ -44,7 +44,7 @@
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
-                <div class="container-fluid p-3 my-3 bg-success text-white text-center">
+                <div class="container-fluid p-3 my-3 text-white text-center flashes-container">
                     <div class="row"></div>
                         <div class="col flashes">
                             <h4>{{ message }}</h4>
