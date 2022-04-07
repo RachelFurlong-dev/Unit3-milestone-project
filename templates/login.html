@@ -8,11 +8,11 @@
                 <img src="/" alt="avatar" class="">
                 </div>
                 <div class="center-form">
-                    <form method="POST" action="{{ url_for('register') }}">
-                        <h3 class="login-heading">Join Houseplantr</h3>
+                    <form method="POST" action="{{ url_for('login') }}">
+                        <h3 class="login-heading">Log in to Houseplantr</h3>
                         <!--username-->
                         <div class="form-group">
-                            <i class="fas fa-user-plus prefix text-darken-4"></i>
+                            <i class="fas fa-user-cog prefix text-darken-4"></i>
                             <label for="username"></label>
                             <input id="username" name="username"  type="text" min-length="5" max-length="15" pattern="^[a-zA-Z0-9]{5,15}$" class="form-control" placeholder="Username" required> 
                         </div>
@@ -22,13 +22,13 @@
                             <label for="password"></label>
                             <input id="password" name="password" class="form-control" type="password" min-length="5" max-length="15" pattern="^[a-zA-Z0-9]{5,15}$" class="form-control" placeholder="Password" required>
                         </div>
-                        <!--register-->
+                        <!--login-->
                         <div>
-                            <button type="submit" class="btn btn-success btn-block">Register <i class="fas fa-sign-in-alt"></i></button>
+                            <button type="submit" class="btn btn-success btn-block">Log in <i class="fas fa-sign-in-alt"></i></button>
                         </div>
                     </form>
                     <div class="float-right">
-                    <small class="text-muted not-member">Already a member? <a href="{{ url_for('login') }}">Login</a></small>
+                    <small class="text-muted not-member">New here? <a href="{{ url_for('register') }}">Register account</a></small>
                     </div>
                 </div>
             </div>
