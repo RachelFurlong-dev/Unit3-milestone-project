@@ -3,12 +3,12 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12" method="POST" action="{{ url_for('register') }}">
+            <div class="col-12">
                 <div class="avatar">
                 <img src="/" alt="avatar" class="">
                 </div>
                 <div class="center-form">
-                    <form>
+                    <form method="POST" action="{{ url_for('register') }}">
                         <h3 class="contact-heading">Join Houseplantr</h3>
                         <!--username-->
                         <div class="form-group">
