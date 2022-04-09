@@ -15,6 +15,8 @@
     margin-bottom:50px;
     letter-spacing: 2px;
 }
+
+/*links*/
 a{
     color:#0d601d;
 }
@@ -28,4 +30,17 @@ button[type="submit"]{
     font-weight:600;
     letter-spacing: 0.1rem;
     padding:10px;
+}
+
+/*profile page styles*/
+.btn-profile{
+    margin-top:70px;
+}
+.profile-button{
+    background-color:#0d601d;
+}
+
+.my-profile{
+    margin-top:50px;
+    padding:30px;
 }

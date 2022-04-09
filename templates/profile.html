@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center mt-2">
+            <div class="random-avatar">
+            <img src="/" alt="random avatar">
+            </div>        
+            <div class="user-profile">
+                    <div class="my-profile">
+                        <h2>
+                            {{ username }}'s Profile
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget congue ante, vel sodales tellus. Donec egestas elementum tortor eget ornare. Suspendisse potenti. Vivamus sodales ipsum ut eros ultricies, nec efficitur sapien mollis. Nunc imperdiet nulla purus, nec consectetur orci lobortis vitae. Suspendisse varius quis leo ac consequat.</p>
+                    </div>  
+                      <div class="btn-profile">
+                        <a class="btn btn-success m-2 px-5 py-3 profile-button" href="{{ url_for('login') }}" role="button">My Houseplants</a>
+                        <a class="btn btn-success m-2 px-5 py-3 profile-button" href="{{ url_for('login') }}" role="button">Change Password </a>
+                        <a class="btn btn-success m-2 px-5 py-3 profile-button" href="{{ url_for('login') }}" role="button">Delete Account</a>
+                     </div>  
+            </div>
+        </div>   
+    </div>
+  </div>
+
+{% endblock %}
