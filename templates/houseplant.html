@@ -1,59 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-
-    {% for houseplant in houseplant %}
-        {{ houseplant.category }}<br>
-        {{ houseplant.horticultural_name }}<br>
-        {{ houseplant.common_name }}<br>
-        {{ houseplant.description }}<br>
-        {{ houseplant.date }}<br>
-        {{ houseplant.horticulturalist }}<br>
-        {{ houseplant.image_url }}<br>
-    {% endfor %}
-
     <div class="container plants-container my-5">    
         <div class="card-columns">
-          <!-- individual card -->
+            {% for houseplant in houseplant %}
             <div class="card">
-              <img class="card-img-top" src="/image" alt="Card image cap">
+              <img class="card-img-top" src="{{ houseplant.image_url }}" alt="Card image cap">
                 <div class="card-body">
-                    <p data-toggle="modal" data-target="#myModal"><i class="fas fa-search"></i></p>
-                    <h5 class="card-title"><strong>Monstera</strong></h5>
-                    <h6 class="card-title">(Cheese Plant)</h6>
-                    <p class="card-text">Monstera deliciosa, the Swiss cheese plant or split-leaf philodendron is a species of flowering plant.</p>
+                    <h5 class="card-title"><strong>{{ houseplant.horticultural_name }}</strong></h5>
+                    <h6 class="card-title">{{ houseplant.common_name }}</h6>
+                    <p class="card-text">{{ houseplant.description }}</p>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item"><i class="fas fa-seedling"></i>{{ houseplant.category }}</li>
+                        <li class="list-group-item"><i class="fas fa-user"></i>{{ houseplant.horticulturalist }}</li>
+                        <li class="list-group-item"><i class="fas fa-calendar-day"></i>{{ houseplant.date }}</li>
+                    </ul>
                 </div>
             </div>
-            <!-- /.individual card -->
+            {% endfor %}
         </div>
     </div> 
-    <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header bg-light">
-          <button type="button" class="close" data-dismiss="modal">×</button>
-        </div>
-        <div class="container">
-              <div class="row">
-                  <div class="col">
-                        <h4 class="mt-2 contact-heading">Houseplant Info</h4>
-                        <ul class="list-group mb-4">
-                            <li class="list-group-item"><i class="fas fa-seedling"></i> Category</li>
-                            <li class="list-group-item"><i class="fas fa-user"></i> Horticulturalist</li>
-                            <li class="list-group-item"><i class="fas fa-leaf"></i> Description</li>
-                            <li class="list-group-item"><i class="fas fa-calendar-day"></i> Date</li>
-                        </ul>
-                  </div>
-              </div>
-          </div>
-            <div class="modal-footer bg-light">
-            <a class="btn btn-success m-2 px-5 py-3" href="#" role="button">Houseplant care</a>
-            </div>
-      </div>
-    </div>
-  </div>
-
+ 
 {% endblock %}
