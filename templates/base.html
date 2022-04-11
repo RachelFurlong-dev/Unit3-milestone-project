@@ -30,7 +30,7 @@
                     <li class="active nav-item mr-2"><a class="nav-link" href="{{ url_for('get_houseplant') }}">Houseplants</a></li>
                     {% if session.user %}
                         <li class="nav-item mr-2"><a class="nav-link" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li class="nav-item mr-2"><a class="nav-link" href="">Add Houseplant</a></li>
+                        <li class="nav-item mr-2"><a class="nav-link" href="{{ url_for('add_plant') }}">Add Houseplant</a></li>
                         <li class="nav-item mr-2"><a class="nav-link" href="">Manage Categories</a></li>
                         <li class="nav-item mr-2"><a class="nav-link" href="{{ url_for('logout') }}">Log out</a></li>
                     {% else %}
